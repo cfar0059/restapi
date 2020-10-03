@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
@@ -16,6 +15,8 @@ class User extends Authenticatable
 
     const ADMIN_USER = 'true';
     const REGULAR_USER = 'false';
+
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -63,7 +64,7 @@ class User extends Authenticatable
      * through STR class - random Function (Generate a more truly "random" alpha-numeric string.)
      * @return string
      */
-    public function generateVerficationCode(){
+    public static function generateVerificationCode(){
         return Str::random(40);
     }
 
