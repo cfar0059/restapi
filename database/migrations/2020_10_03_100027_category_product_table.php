@@ -32,4 +32,5 @@ class CategoryProductTable extends Migration
     {
         Schema::dropIfExists('category_product');
     }
+
 }
