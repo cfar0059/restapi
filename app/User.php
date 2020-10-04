@@ -48,16 +48,17 @@ class User extends Authenticatable
      * Sets the Name Attribute to $name
      * @param $name
      */
-    public function setNameAttributes($name){
-        $this->attributes['name'] = $name;
+    public function setNameAttribute($name){
+        $this->attributes['name'] = strtolower($name);
     }
+
 
     /**
      * Transform each word within the name to use a capital letter
      * @param $name
      * @return string
      */
-    public function getNameAttributes($name){
+    public function getNameAttribute($name){
         return ucwords($name);
     }
 
@@ -66,19 +67,9 @@ class User extends Authenticatable
      * Sets the Name Attribute to $email
      * @param $email
      */
-    public function setEmailAttributes($email){
+    public function setEmailAttribute($email){
         $this->attributes['email'] = strtolower($email);
     }
-
-
-    /**
-     * @param $name
-     * @return string
-     */
-    public function getEmailAttributes($email){
-        $this->attributes['email'] = strtolower($email);
-    }
-
 
     /**
      * Verifies if the User is a Verified User
