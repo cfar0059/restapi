@@ -44,6 +44,43 @@ class User extends Authenticatable
     ];
 
     /**
+     * Mutator for name
+     * Sets the Name Attribute to $name
+     * @param $name
+     */
+    public function setNameAttributes($name){
+        $this->attributes['name'] = $name;
+    }
+
+    /**
+     * Transform each word within the name to use a capital letter
+     * @param $name
+     * @return string
+     */
+    public function getNameAttributes($name){
+        return ucwords($name);
+    }
+
+    /**
+     * Mutator for email
+     * Sets the Name Attribute to $email
+     * @param $email
+     */
+    public function setEmailAttributes($email){
+        $this->attributes['email'] = strtolower($email);
+    }
+
+
+    /**
+     * @param $name
+     * @return string
+     */
+    public function getEmailAttributes($email){
+        $this->attributes['email'] = strtolower($email);
+    }
+
+
+    /**
      * Verifies if the User is a Verified User
      * @return string
      */
