@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Implemeneted the Model Factories">
+    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Change public function product to products.  &#10;Removed api prefix.&#10;Removed comments in ModelFactory.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Seller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Seller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +171,7 @@
       <updated>1601712133470</updated>
       <workItem from="1601712134500" duration="10227000" />
       <workItem from="1601722836460" duration="4234000" />
-      <workItem from="1601825627789" duration="438000" />
+      <workItem from="1601825627789" duration="4334000" />
     </task>
     <task id="LOCAL-00001" summary="Commit before reset Migration">
       <created>1601722864762</created>
@@ -190,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601725550499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change public function product to products.  &#10;Removed api prefix.&#10;Removed comments in ModelFactory.php">
+      <created>1601826396545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601826396545</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +215,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit before reset Migration" />
     <MESSAGE value="Implemeneted the Model Factories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemeneted the Model Factories" />
+    <MESSAGE value="Change public function product to products.  &#10;Removed api prefix.&#10;Removed comments in ModelFactory.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change public function product to products.  &#10;Removed api prefix.&#10;Removed comments in ModelFactory.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1085" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601717898168">
@@ -222,13 +227,13 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1601722755876" />
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601725551763">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601826398256">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601725551763" />
-    <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601825732526">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601826398256" />
+    <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601828576249">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="987" y="119" width="585" height="801" key="find.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1601825732526" />
+    <state x="987" y="119" width="585" height="801" key="find.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1601828576249" />
   </component>
 </project>

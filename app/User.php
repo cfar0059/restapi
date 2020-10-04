@@ -48,7 +48,7 @@ class User extends Authenticatable
      * @return string
      */
     public function isVerified(){
-       return $this->verified = User::VERIFIED_USER;
+        return $this->verified == User::VERIFIED_USER;
     }
 
     /**
@@ -56,7 +56,7 @@ class User extends Authenticatable
      * @return string
      */
     public function isAdmin(){
-        return $this->admin = User::ADMIN_USER;
+        return $this->admin == User::ADMIN_USER;
     }
 
     /**
