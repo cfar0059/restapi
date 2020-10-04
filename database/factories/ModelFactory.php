@@ -60,6 +60,5 @@ $factory->define(Transaction::class, function (Faker\Generator $faker) {
         'quantity' => $faker->numberBetween(1, 3),
         'buyer_id' => $buyer->id,
         'product_id' => $seller->products->random()->id,
-        // User::inRandomOrder()->first()->id
     ];
 });

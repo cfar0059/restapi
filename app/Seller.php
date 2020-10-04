@@ -10,7 +10,8 @@ class Seller extends User
      * A seller has many products
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function product(){
+    public function products()
+    {
         return $this->hasMany(Product::class);
     }
 }
