@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Handling errors and exceptions through Handler.php">
-      <change afterPath="$PROJECT_DIR$/app/Scopes/BuyerScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Scopes/SellerScope.php" afterDir="false" />
+    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Implicit Model Binding with Routes and Methods - Users, Buyers, Sellers &#10;Implementing Soft Delete in database structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Buyer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Buyer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Seller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Seller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_03_081751_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_081751_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +178,7 @@
       <workItem from="1601712134500" duration="10227000" />
       <workItem from="1601722836460" duration="4234000" />
       <workItem from="1601825627789" duration="9975000" />
-      <workItem from="1601897613514" duration="4504000" />
+      <workItem from="1601897613514" duration="4643000" />
     </task>
     <task id="LOCAL-00001" summary="Commit before reset Migration">
       <created>1601722864762</created>
@@ -243,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601902692707</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implicit Model Binding with Routes and Methods - Users, Buyers, Sellers &#10;Implementing Soft Delete in database structure">
+      <created>1601905086746</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601905086746</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +270,8 @@
     <MESSAGE value="Created ApiController and trait ApiResponser with respective functions.&#10;Changes Controllers to extend to ApiController" />
     <MESSAGE value="Generalised Methods for Controllers" />
     <MESSAGE value="Handling errors and exceptions through Handler.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handling errors and exceptions through Handler.php" />
+    <MESSAGE value="Implicit Model Binding with Routes and Methods - Users, Buyers, Sellers &#10;Implementing Soft Delete in database structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implicit Model Binding with Routes and Methods - Users, Buyers, Sellers &#10;Implementing Soft Delete in database structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1085" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601717898168">
@@ -285,10 +286,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1601722755876" />
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601902716579">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601905087833">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601902716579" />
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601905087833" />
     <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601904844312">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
