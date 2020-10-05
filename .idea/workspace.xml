@@ -19,9 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Generalised Methods for Controllers">
+    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Handling errors and exceptions through Handler.php">
+      <change afterPath="$PROJECT_DIR$/app/Scopes/BuyerScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Scopes/SellerScope.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Buyer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Buyer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Seller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Seller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_03_081751_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_081751_create_categories_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,10 +158,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Scopes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RESTfulAPI\app\Scopes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -171,7 +185,7 @@
       <workItem from="1601712134500" duration="10227000" />
       <workItem from="1601722836460" duration="4234000" />
       <workItem from="1601825627789" duration="9975000" />
-      <workItem from="1601897613514" duration="2752000" />
+      <workItem from="1601897613514" duration="4504000" />
     </task>
     <task id="LOCAL-00001" summary="Commit before reset Migration">
       <created>1601722864762</created>
@@ -222,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601836243302</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Handling errors and exceptions through Handler.php">
+      <created>1601902692707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601902692707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,29 +269,30 @@
     <MESSAGE value="Implemented request handling for Buyers and Seller.&#10;Implemented Accessors and Mutators for User name and email" />
     <MESSAGE value="Created ApiController and trait ApiResponser with respective functions.&#10;Changes Controllers to extend to ApiController" />
     <MESSAGE value="Generalised Methods for Controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generalised Methods for Controllers" />
+    <MESSAGE value="Handling errors and exceptions through Handler.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handling errors and exceptions through Handler.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1085" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601717898168">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1085" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1601717898168" />
-    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601897707494">
+    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601904701331">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1601897707494" />
+    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1601904701331" />
     <state x="781" y="165" key="SettingsEditor" timestamp="1601722755876">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1601722755876" />
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601836244421">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601902716579">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601836244421" />
-    <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601833853647">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601902716579" />
+    <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601904844312">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="987" y="119" width="585" height="801" key="find.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1601833853647" />
+    <state x="987" y="119" width="585" height="801" key="find.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1601904844312" />
     <state x="997" y="291" key="refactoring.ChangeSignatureDialog" timestamp="1601834453577">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
