@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Use of better syntax for SoftDeletes in User.php&#10;Created CategoryController.php through make:controller Category/CategoryController -r -m Category">
+    <list default="true" id="74737803-6b48-4079-a1e5-94033162ae26" name="Default Changelist" comment="Implemented Category,Products and Transactions Controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Transaction/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Transaction/TransactionController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Scopes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dev/react_crash_todo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -178,7 +175,8 @@
       <workItem from="1601712134500" duration="10227000" />
       <workItem from="1601722836460" duration="4234000" />
       <workItem from="1601825627789" duration="9975000" />
-      <workItem from="1601897613514" duration="8659000" />
+      <workItem from="1601897613514" duration="9854000" />
+      <workItem from="1601921844404" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Commit before reset Migration">
       <created>1601722864762</created>
@@ -257,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601906285109</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implemented Category,Products and Transactions Controllers">
+      <created>1601920124378</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601920124378</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +292,8 @@
     <MESSAGE value="Implicit Model Binding with Routes and Methods - Users, Buyers, Sellers &#10;Implementing Soft Delete in database structure" />
     <MESSAGE value="Implemented Soft Deletes in Models" />
     <MESSAGE value="Use of better syntax for SoftDeletes in User.php&#10;Created CategoryController.php through make:controller Category/CategoryController -r -m Category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use of better syntax for SoftDeletes in User.php&#10;Created CategoryController.php through make:controller Category/CategoryController -r -m Category" />
+    <MESSAGE value="Implemented Category,Products and Transactions Controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Category,Products and Transactions Controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1085" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601717898168">
@@ -298,14 +304,18 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1601907778802" />
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1601921862241">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1601921862241" />
     <state x="781" y="165" key="SettingsEditor" timestamp="1601722755876">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1601722755876" />
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601906286280">
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601920125532">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601906286280" />
+    <state x="872" y="240" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1601920125532" />
     <state x="987" y="119" width="585" height="801" key="find.popup" timestamp="1601907355852">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

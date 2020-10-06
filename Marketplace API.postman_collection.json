@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "c71331d8-f0eb-4a29-a906-79626a3761e4",
+		"name": "Marketplace API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/users/204",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"users",
+						"204"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Carl Farrugia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/users/1001",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"users",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Carl Farrugia Galea",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cfar0059@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Cfar0059*",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "Cfar0059*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/users",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/users/4",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"users",
+						"4"
+					]
+				},
+				"description": "The Show Method for UserController"
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/users",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions - Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/sellers/96",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"sellers",
+						"96"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions - Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/products",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sellers- Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/sellers",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sellers- Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/sellers/96",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"sellers",
+						"96"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/products",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/products/1",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories - Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/categories",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories - Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/categories/4",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"categories",
+						"4"
+					]
+				},
+				"description": "The Show Method for UserController"
+			},
+			"response": []
+		},
+		{
+			"name": "Categories - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "popolus2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Tastes as good as the popus",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/categories",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cakes2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/categories/2",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/categories/1",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyers- Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/buyers",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyers- Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/buyers/1",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"buyers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
